@@ -7,7 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-white: #fff;
+    --spacing: 0.25rem;
     --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -180,14 +182,29 @@
   .h-\[56px\] {
     height: 56px;
   }
+  .h-\[800px\] {
+    height: 800px;
+  }
+  .w-\[32\] {
+    width: 32;
+  }
   .w-\[214px\] {
     width: 214px;
   }
   .w-\[298px\] {
     width: 298px;
   }
+  .w-\[327\] {
+    width: 327;
+  }
+  .w-\[327px\] {
+    width: 327px;
+  }
   .max-w-\[1366px\] {
     max-width: 1366px;
+  }
+  .max-w-\[1440px\] {
+    max-width: 1440px;
   }
   .border-collapse {
     border-collapse: collapse;
@@ -226,11 +243,26 @@
   .bg-\[\#69B99D\] {
     background-color: #69B99D;
   }
+  .bg-\[\#f9f9f9\] {
+    background-color: #f9f9f9;
+  }
+  .bg-red-600 {
+    background-color: var(--color-red-600);
+  }
   .p-\[10px\] {
     padding: 10px;
   }
+  .py-25 {
+    padding-block: calc(var(--spacing) * 25);
+  }
+  .py-\[100px\] {
+    padding-block: 100px;
+  }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .text-\[16px\] {
     font-size: 16px;
@@ -244,6 +276,9 @@
   }
   .text-\[\#676767\] {
     color: #676767;
+  }
+  .text-\[\#767676\] {
+    color: #767676;
   }
   .text-white {
     color: var(--color-white);
@@ -280,6 +315,11 @@
       height: 46px;
     }
   }
+  .lg\:h-\[54px\] {
+    @media (width >= 64rem) {
+      height: 54px;
+    }
+  }
   .lg\:h-\[108px\] {
     @media (width >= 64rem) {
       height: 108px;
@@ -288,6 +328,16 @@
   .lg\:h-\[699px\] {
     @media (width >= 64rem) {
       height: 699px;
+    }
+  }
+  .lg\:h-\[766px\] {
+    @media (width >= 64rem) {
+      height: 766px;
+    }
+  }
+  .lg\:w-\[182px\] {
+    @media (width >= 64rem) {
+      width: 182px;
     }
   }
   .lg\:w-\[347px\] {
@@ -300,9 +350,24 @@
       width: 396px;
     }
   }
+  .lg\:w-\[610px\] {
+    @media (width >= 64rem) {
+      width: 610px;
+    }
+  }
+  .lg\:w-\[px\] {
+    @media (width >= 64rem) {
+      width: px;
+    }
+  }
   .lg\:max-w-\[1366px\] {
     @media (width >= 64rem) {
       max-width: 1366px;
+    }
+  }
+  .lg\:max-w-\[1440px\] {
+    @media (width >= 64rem) {
+      max-width: 1440px;
     }
   }
   .lg\:flex-row {
@@ -310,9 +375,19 @@
       flex-direction: row;
     }
   }
+  .lg\:items-center {
+    @media (width >= 64rem) {
+      align-items: center;
+    }
+  }
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
   .lg\:justify-evenly {
